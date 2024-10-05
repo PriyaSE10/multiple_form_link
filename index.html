@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+<div class="container-fluid">
+    
+    <div class="row">
+        <!-- Left Section --> 
+        <div class="col-md-6 left-section">
+            <div class="image-container offset-3">
+                <a href="./index.html">
+                    <img src="https://foruminvestmentgroup-hubspot-staging.mystagingwebsite.com/wp-content/uploads/logo-forum.svg" alt="Logo" class="logo mb-4">
+                </a>
+            </div>
+            <div class="heading-container text-sm-left offset-3">
+                <h1 style="font-family: auto;color: #0D1A42;">Get Started</h1>
+                <p>Please tell us about yourself to gain access to our various funds.</p>
+                <div class="d-flex align-items-center">
+                 <span  class="span">Looking for investor portal?</span>
+                 <a href="#" class="btn btn-link" >Login</a>
+         </div>
+        </div>    
+        </div>
+        
+        <!-- Right Section -->
+        <div class="col-md-6 right-section">
+            <div class="cards">
+                <h2>Which best describes you?</h2>
+                <div class="text-content" data-target="form-steps.html">
+                    <i class="ri-user-line"></i>
+                    <div class="text">
+                        <h5>Individual Investor</h5>
+                        <p>i'm considering investing on behalf of myself or my family office.</p>
+                    </div>
+                </div>
+                <div class="text-content" data-target="form-steps.html">
+                    <i class="ri-group-line"></i>
+                    <div class="text">
+                        <h5>Financial Advisor</h5>
+                        <p>i'm considering investing on behalf of client.</p>
+                    </div>
+                </div>
+             
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/form/script.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+  const textContents = document.querySelectorAll('.text-content');
+
+  textContents.forEach((item) => {
+    item.addEventListener('click', () => {
+      const targetPage = item.getAttribute('data-target');
+      window.location.href = targetPage;
+    });
+  });
+});
+</script>
+</body>
+</html>
+
+
+
